@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Шаблон кнопки</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- вспомогательные стили страницы -->
+    <link href="css/style.css?ver=1.0" rel="stylesheet">
+    <!-- стили виджета -->
+    <link href="css/news-widget.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="news-server" id="news-server"></div>
+    <div class="news-mock" id="news-mock"></div>
+    <!-- подключение виджета -->
+    <script src="news-widget.js"></script>
+    <!-- инициализация виджета -->
+    <script>
+      const newsWidgetServer = new NewsWidget({
+        container: "news-server",
+        type: "server",
+        source: "https://run.mocky.io/v3/f713c246-2a14-4520-8468-42de76929ed7"
+      });
+    </script>
+    <script>
+      const newsWidgetData = new NewsWidget({
+        container: "news-mock",
+        type: "mocks",
+      });
+    </script>
+  </body>
+</html>

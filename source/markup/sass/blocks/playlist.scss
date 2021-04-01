@@ -1,0 +1,15 @@
+.playlist {
+  width: 1440px;
+  height: 100px;
+  margin: 0 auto;
+  @include outline(green);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.playlist__songs {
+  display: block;
+  width: 675px;
+  height: 100px;
+  @include outline(tomato);
+}
