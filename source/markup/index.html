@@ -11,7 +11,55 @@
   <body>
     <main class="playlist">
       <div class="playlist__songs">
+        <div class="playlist__tones">
+          <ul class="playlist__mood">
+            <li class="playlist__tone badge badge--c">C</li>
+            <li class="playlist__tone badge badge--cs">C#</li>
+            <li class="playlist__tone badge badge--d">D</li>
+            <li class="playlist__tone badge badge--ds">D#</li>
+            <li class="playlist__tone badge badge--e">E</li>
+            <li class="playlist__tone badge badge--f">F</li>
+            <li class="playlist__tone badge badge--fs">F#</li>
+            <li class="playlist__tone badge badge--g">G</li>
+            <li class="playlist__tone badge badge--gs">G#</li>
+            <li class="playlist__tone badge badge--a">A</li>
+            <li class="playlist__tone badge badge--as">A#</li>
+            <li class="playlist__tone badge badge--b">B</li>
+          </ul>
+          <ul class="playlist__mood">
+            <li class="playlist__tone badge badge--c">Am</li>
+            <li class="playlist__tone badge badge--cs">A#m</li>
+            <li class="playlist__tone badge badge--d">Bm</li>
+            <li class="playlist__tone badge badge--ds">Cm</li>
+            <li class="playlist__tone badge badge--e">C#m</li>
+            <li class="playlist__tone badge badge--f">Dm</li>
+            <li class="playlist__tone badge badge--fs">D#m</li>
+            <li class="playlist__tone badge badge--g">Em</li>
+            <li class="playlist__tone badge badge--gs">Fm</li>
+            <li class="playlist__tone badge badge--a">F#m</li>
+            <li class="playlist__tone badge badge--as">Gm</li>
+            <li class="playlist__tone badge badge--b">G#m</li>
+          </ul>
+        </div>
+        <div class="playlist__songlist">
+          <div class="playlist__card">
+            <div class="playlist__title">
+              <span>Mary had a little lamb</span>
+              <span>Stevie Ray Vaughan</span>
+            </div>
+            <div class="playlist__badges">
+              <span class="badge badge--e">E</span>
+              <span class="badge badge--tempo">112</span>
+              <span class="badge badge--time"></span>
+            </div>
 
+            <input type="checkbox" id="card">
+            <label for="card">Тут будут стрелочки</label>
+            <div class="audioplayer">
+              <progress class="player__progress" value="30" max="100"></progress>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </body>

@@ -13,3 +13,13 @@
   height: 100px;
   @include outline(tomato);
 }
+
+.playlist__mood {
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+}
+
+.playlist__tone {
+  flex-grow: 1;
+}
